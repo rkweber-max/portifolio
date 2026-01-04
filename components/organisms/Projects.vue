@@ -68,15 +68,23 @@ const projects = [
   {
     title: "API de Pagamentos (Projeto Pessoal)",
     description:
-      "API de checkout de pagamentos desenvolvida em Golang, com foco em performance, organização de camadas e boas práticas de backend. Projeto voltado para estudo e simulação de fluxo real de pagamentos.",
+      "API de checkout de pagamentos desenvolvida em Golang, com foco em performance e organização de camadas.",
     tags: ["Golang", "REST API", "Docker"],
     github: "https://github.com/rkweber-max/checkout-backend",
     demo: null,
   },
   {
+    title: "Giftmax – Cashback & Campanhas em Fluxos de Pagamento",
+    description:
+      "Projeto corporativo focado na integração de cashback e campanhas promocionais aos fluxos de pagamento e pedidos, utilizando arquitetura orientada a eventos e garantindo consistência entre pagamentos, cashback e chargebacks.",
+    tags: ["Golang", "PHP", "Laravel", "AWS SQS"],
+    github: null,
+    demo: null,
+  },
+  {
     title: "Consulta de Pedidos por Phone Number",
     description:
-      "Serviço backend em Golang para consulta de pedidos a partir do número de telefone, com autenticação via API Key, paginação, filtros e controle de limite de requisições.",
+      "Serviço backend em Golang para consulta de pedidos via número de telefone, com autenticação por API Key, paginação e controle de limites.",
     tags: ["Golang", "REST API", "Pagination", "API Key"],
     github: null,
     demo: null,
@@ -84,7 +92,7 @@ const projects = [
   {
     title: "Comunicação entre Sistemas com SQS",
     description:
-      "Implementação de comunicação assíncrona entre sistemas utilizando AWS SQS, garantindo desacoplamento, confiabilidade e processamento seguro de eventos.",
+      "Implementação de comunicação assíncrona entre sistemas utilizando AWS SQS, garantindo desacoplamento e processamento confiável.",
     tags: ["PHP", "Laravel", "AWS SQS", "Mensageria"],
     github: null,
     demo: null,
@@ -92,25 +100,17 @@ const projects = [
   {
     title: "Automação de Criação de Credenciais",
     description:
-      "Automação de fluxo para criação e gestão de credenciais, com backend em Laravel e frontend em Vue.js, reduzindo processos manuais e erros operacionais.",
-    tags: ["PHP", "Laravel", "Vue.js", "Automação"],
+      "Automação de fluxos internos para criação e gestão de credenciais, com backend em Laravel e frontend em Vue.js.",
+    tags: ["PHP", "Laravel", "RabbitMQ", "Redis", "Vue.js", "Automação"],
     github: null,
     demo: null,
   },
   {
     title: "CRUD de Usuários em Golang (Projeto Pessoal)",
     description:
-      "Aplicação backend em Golang aplicando conceitos de organização de código, orientação a objetos, camadas e operações CRUD completas.",
+      "Aplicação backend em Golang aplicando conceitos de organização de código, camadas e operações CRUD.",
     tags: ["Golang", "CRUD", "Clean Code"],
     github: "https://github.com/rkweber-max/go-object-oriented",
-    demo: null,
-  },
-  {
-    title: "Integração entre Sistemas em Java (Projeto Pessoal)",
-    description:
-      "Projeto em Java focado na integração entre sistemas, consumo e envio de dados entre serviços distintos, explorando conceitos de arquitetura e comunicação entre aplicações.",
-    tags: ["Java", "Integrações", "Backend"],
-    github: "https://github.com/rkweber05/Boss-Mundo-2-StrangerStrings",
     demo: null,
   },
 ];
