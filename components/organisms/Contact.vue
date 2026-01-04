@@ -32,13 +32,13 @@
             </div>
             <div>
               <div class="text-slate-400 mb-1">Email</div>
-              <div class="text-white">rodrigo@example.com</div>
+              <div class="text-white">rkweber05@outlook.com</div>
             </div>
           </div>
         </a>
 
         <a
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/rodrigo-kweber"
           target="_blank"
           rel="noopener noreferrer"
           class="p-6 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-blue-500 transition-all group"
@@ -63,7 +63,7 @@
         class="flex flex-col sm:flex-row gap-4 justify-center items-center"
       >
         <a
-          href="https://github.com"
+          href="https://github.com/rkweber05"
           target="_blank"
           rel="noopener noreferrer"
           class="flex items-center gap-2 px-6 py-3 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border border-slate-700 hover:border-slate-600 transition-all"
@@ -72,7 +72,10 @@
           <span>GitHub Profile</span>
         </a>
         
-        <button class="flex items-center gap-2 px-6 py-3 rounded-lg bg-blue-600 hover:bg-blue-700 text-white transition-colors">
+        <button
+          @click="downloadCV"
+          class="flex items-center gap-2 px-6 py-3 rounded-lg bg-blue-600 hover:bg-blue-700 text-white transition-colors"
+        >
           <Download class="w-5 h-5" />
           <span>Download CV</span>
         </button>
@@ -83,5 +86,13 @@
 
 <script setup lang="ts">
 import { Mail, Linkedin, Github, Download } from 'lucide-vue-next'
+
+const downloadCV = () => {
+  const link = document.createElement('a')
+  link.href = '/cv/rodrigo-k-weber-resume.pdf'
+  link.download = 'Rodrigo K. Weber Resume.pdf'
+  link.click()
+}
+
 </script>
 

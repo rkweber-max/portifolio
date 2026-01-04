@@ -8,7 +8,9 @@
         :delay="0"
         class="text-center mb-16"
       >
-        <h2 class="mb-4 text-3xl md:text-4xl font-bold text-slate-900">Projetos em Destaque</h2>
+        <h2 class="mb-4 text-3xl md:text-4xl font-bold text-slate-900">
+          Projetos em Destaque
+        </h2>
         <p class="text-slate-600">
           Alguns dos projetos que desenvolvi ao longo da minha carreira
         </p>
@@ -26,7 +28,7 @@
         >
           <h3 class="mb-3 text-slate-900">{{ project.title }}</h3>
           <p class="text-slate-600 mb-4">{{ project.description }}</p>
-          
+
           <div class="flex flex-wrap gap-2 mb-4">
             <span
               v-for="(tag, tagIndex) in project.tags"
@@ -60,51 +62,56 @@
 </template>
 
 <script setup lang="ts">
-import { Github, ExternalLink } from 'lucide-vue-next'
+import { Github, ExternalLink } from "lucide-vue-next";
 
 const projects = [
   {
-    title: 'Sistema de Gestão Financeira',
-    description: 'Plataforma completa para gestão de transações financeiras com dashboard em tempo real, desenvolvida com Laravel e Vue 3.',
-    tags: ['Laravel', 'Vue 3', 'MySQL', 'Redis'],
-    github: '#',
-    demo: '#',
+    title: "API de Pagamentos (Projeto Pessoal)",
+    description:
+      "API de checkout de pagamentos desenvolvida em Golang, com foco em performance, organização de camadas e boas práticas de backend. Projeto voltado para estudo e simulação de fluxo real de pagamentos.",
+    tags: ["Golang", "REST API", "Docker"],
+    github: "https://github.com/rkweber-max/checkout-backend",
+    demo: null,
   },
   {
-    title: 'API de Pagamentos',
-    description: 'API RESTful de alta performance para processamento de pagamentos, construída com Golang e microserviços.',
-    tags: ['Golang', 'PostgreSQL', 'Docker', 'gRPC'],
-    github: '#',
-    demo: '#',
+    title: "Consulta de Pedidos por Phone Number",
+    description:
+      "Serviço backend em Golang para consulta de pedidos a partir do número de telefone, com autenticação via API Key, paginação, filtros e controle de limite de requisições.",
+    tags: ["Golang", "REST API", "Pagination", "API Key"],
+    github: null,
+    demo: null,
   },
   {
-    title: 'Portal de Investimentos',
-    description: 'Aplicação web para acompanhamento de investimentos com integração a APIs de mercado financeiro, usando Spring Boot.',
-    tags: ['Spring Boot', 'Nuxt', 'MongoDB', 'Kafka'],
-    github: '#',
-    demo: '#',
+    title: "Comunicação entre Sistemas com SQS",
+    description:
+      "Implementação de comunicação assíncrona entre sistemas utilizando AWS SQS, garantindo desacoplamento, confiabilidade e processamento seguro de eventos.",
+    tags: ["PHP", "Laravel", "AWS SQS", "Mensageria"],
+    github: null,
+    demo: null,
   },
   {
-    title: 'Sistema de Autenticação',
-    description: 'Solução de autenticação e autorização multi-tenant com JWT e OAuth2, desenvolvida em Java.',
-    tags: ['Java', 'Spring Security', 'Redis', 'PostgreSQL'],
-    github: '#',
-    demo: '#',
+    title: "Automação de Criação de Credenciais",
+    description:
+      "Automação de fluxo para criação e gestão de credenciais, com backend em Laravel e frontend em Vue.js, reduzindo processos manuais e erros operacionais.",
+    tags: ["PHP", "Laravel", "Vue.js", "Automação"],
+    github: null,
+    demo: null,
   },
   {
-    title: 'Dashboard Analytics',
-    description: 'Dashboard interativo para análise de dados financeiros com gráficos e relatórios customizáveis.',
-    tags: ['Vue 3', 'Chart.js', 'Laravel', 'MySQL'],
-    github: '#',
-    demo: '#',
+    title: "CRUD de Usuários em Golang (Projeto Pessoal)",
+    description:
+      "Aplicação backend em Golang aplicando conceitos de organização de código, orientação a objetos, camadas e operações CRUD completas.",
+    tags: ["Golang", "CRUD", "Clean Code"],
+    github: "https://github.com/rkweber-max/go-object-oriented",
+    demo: null,
   },
   {
-    title: 'Microserviço de Notificações',
-    description: 'Sistema de notificações em tempo real com suporte a email, SMS e push notifications.',
-    tags: ['Golang', 'RabbitMQ', 'WebSocket', 'Redis'],
-    github: '#',
-    demo: '#',
+    title: "Integração entre Sistemas em Java (Projeto Pessoal)",
+    description:
+      "Projeto em Java focado na integração entre sistemas, consumo e envio de dados entre serviços distintos, explorando conceitos de arquitetura e comunicação entre aplicações.",
+    tags: ["Java", "Integrações", "Backend"],
+    github: "https://github.com/rkweber05/Boss-Mundo-2-StrangerStrings",
+    demo: null,
   },
-]
+];
 </script>
-
